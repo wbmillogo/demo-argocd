@@ -42,9 +42,9 @@ spec:
         app: geolocationapi
     spec: 
       containers: 
-        - image: "carmenpuccio/aws-otel-collector:latest"
+        - image: "544661183540.dkr.ecr.eu-west-3.amazonaws.com/busybox:aws-otel-collector"
           name: aws-otel-collector           
-        - image: "carmenpuccio/geolocationapi:latest"
+        - image: "544661183540.dkr.ecr.eu-west-3.amazonaws.com/busybox:geolocationapi"
           name: geolocationapi
           env: 
             - name: ASPNETCORE_ENVIRONMENT
